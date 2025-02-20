@@ -1,13 +1,54 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>db-browser</title>
+    <meta name="description"  content="db-browser" />
+    <meta name="keywords" content="db-browser vitejs pouchdb js css3 html5" />
+    <meta name="author" content="victor code" />
+    <script defer type="module"  defer type="module" src="./src/app-container.js"></script>
+<!-- new scripts -->
+ <script defer type="module" src="./src/js/base.js"></script>
+    <script defer type="module" src="./src/js/app.js"></script>
+    <link rel="stylesheet" href="./src/css/globals.css">
   </head>
   <body>
-    <section id="app-container"></section>
-    <script type="module" src="/main.js"></script>
+ 
+      <!-- new section -->
+       <section id="app-container">
+         
+       <header id="header">
+         <h1>TODOS</h1>
+         <input id="new-todo" placeholder="What needs to be done?" autofocus>
+       </header>
+       <main id="main">
+         <ul id="todo-list"></ul>
+       </main>
+       <footer id="footer">
+         <span id="todo-count"></span>
+         <div id="sync-wrapper">
+           <div id="sync-success">Currently syncing</div>
+           <div id="sync-error">There was a problem syncing</div>
+         </div>
+         <section id="info">
+           <p>Double-click to edit a todo</p>
+           <p>Template by <a href="http://github.com/sindresorhus">Sindre Sorhus</a></p>
+           <p>Created by <a href="http://twitter.com/ffesseler">Florian Fesseler</a></p>
+           <p>Cleanup, edits by <a href="http://github.com/boushley">Aaron Boushley</a></p>
+           <p>better UI,responsive development by <a target="_blank" rel="noopener noreferrer"
+             href="https://github.com/moonhuntercode">Victor Code</a></p>
+         </section>
+         <section id="app2-container">
+           <div id="form-container"></div>
+           <div id="data-container"></div>
+          </section>
+       </footer>
+   
+     <!-- <script src="//cdn.jsdelivr.net/pouchdb/3.2.0/pouchdb.min.js"></script> -->
+     <!-- old section -->
+    </section>
   </body>
 </html>
